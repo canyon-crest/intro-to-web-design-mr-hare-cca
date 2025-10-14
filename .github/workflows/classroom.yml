@@ -71,15 +71,15 @@ jobs:
         timeout: 5
         max-score: 5
 
-    - name: IMG closers + float in CSS
+    - name: IMG + float in CSS
       id: img-close-float
       uses: classroom-resources/autograding-io-grader@v1
       with:
-        test-name: 3 "</img>" + float in CSS
+        test-name: 3 "<img " + float in CSS
         command: |
           bash -lc '
           CSS="${{ steps.resolve-css.outputs.css_path }}"
-          ic=$(grep -o "</img>" index.html | wc -l)
+          ic=$(grep -o "<img " index.html | wc -l)
           if [[ -n "$CSS" ]] && grep -qi "float:" "$CSS" && [[ $ic -ge 3 ]]; then echo PASS; else echo FAIL; fi
           '
         expected-output: PASS
