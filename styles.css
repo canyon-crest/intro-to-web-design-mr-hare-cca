@@ -1,1 +1,100 @@
+body{
+  background-color: #8f0000;
+  color: white;
+  font-family: arial;
+  margin: 0;
+}
+#container{
+  background-color: #777;
+  width: 800px;
+  margin: 0 auto;
+  border-left: 3px double white;
+  border-right: 3px double white;
+  padding: 30px;
+}
+
+h1{
+  background-color: black;
+  border: 4px groove white;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+h2{
+  font-size: 1.25em;
+  text-align: center;
+}
+h3{
+  border-left: solid 25px #ffd500;
+  border-bottom: solid 2px white;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  margin-left: 20px;
+  width: 150px;
+}
+p{
+  line-height: 2.25em;
+  border: solid 1px white;
+  padding: 30px;
+}
+h1, h3, p, img{
+  border-radius: 20px;
+}
+img{
+  float:left;
+  border: 3px solid white;
+  margin: 0 15px 15px 0;
+}
+#logo{
+  float:right;
+  border:none;
+}
+.highlight{
+  background-color: #ffd500;
+  font-weight: bold;
+  color: black;
+  padding: 4px;
+  border-radius: 4px;
+}
+a:link{
+  font-weight: bold;
+  color: #8f0000;
+  text-shadow: .5px .5px 0px  black;
+}
+a:visited{
+  color: #8f0000;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:active{
+  background-color: #ffd500;
+  text-decoration: none;
+}
+p:hover{
+  border-color:#8f0000;
+}
+img:active{
+  border-color: black;
+}
+#sidebar{
+  background-color:#8f0000;
+  border: 3px solid white;
+  padding: 12px;
+  width: 235px;
+  border-radius: 20px;
+  float:right;
+  margin: 30px 30px 0 15px
+}
+#sidebar h3{
+  border-left:none;
+  border-radius: 0;
+}
+ul{
+  line-height: 3em;
+}
+li{
+  font-size: 1.1em;
+}
 
