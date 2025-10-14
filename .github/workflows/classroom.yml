@@ -185,15 +185,15 @@ jobs:
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        P_TAGS_RESULTS: "${{ steps.p-tags.outputs.result }}"
-        REL_STYLESHEET_RESULTS: "${{ steps.rel-stylesheet.outputs.result }}"
-        HEADINGS_MIX_RESULTS: "${{ steps.headings-mix.outputs.result }}"
-        IMG_CLOSE_FLOAT_RESULTS: "${{ steps.img-close-float.outputs.result }}"
-        A_CLOSE_RESULTS: "${{ steps.a-close.outputs.result }}"
-        DIV_CLOSE_RESULTS: "${{ steps.div-close.outputs.result }}"
-        CLASS_AND_CSS_DOT_RESULTS: "${{ steps.class-and-css-dot.outputs.result }}"
-        CSS_CORE_RESULTS: "${{ steps.css-core.outputs.result }}"
-        CSS_PSEUDO_RESULTS: "${{ steps.css-pseudo.outputs.result }}"
-        CSS_MEDIA_RESULTS: "${{ steps.css-media.outputs.result }}"
+        P-TAGS_RESULTS: "${{ steps.p-tags.outputs.result }}"
+        REL-STYLESHEET_RESULTS: "${{ steps.rel-stylesheet.outputs.result }}"
+        HEADINGS-MIX_RESULTS: "${{ steps.headings-mix.outputs.result }}"
+        IMG-CLOSE-FLOAT_RESULTS: "${{ steps.img-close-float.outputs.result }}"
+        A-CLOSE_RESULTS: "${{ steps.a-close.outputs.result }}"
+        DIV-CLOSE_RESULTS: "${{ steps.div-close.outputs.result }}"
+        CLASS-AND-CSS-DOT_RESULTS: "${{ steps.class-and-css-dot.outputs.result }}"
+        CSS-CORE_RESULTS: "${{ steps.css-core.outputs.result }}"
+        CSS-PSEUDO_RESULTS: "${{ steps.css-pseudo.outputs.result }}"
+        CSS-MEDIA_RESULTS: "${{ steps.css-media.outputs.result }}"
       with:
         runners: "p-tags,rel-stylesheet,headings-mix,img-close-float,a-close,div-close,class-and-css-dot,css-core,css-pseudo,css-media"
